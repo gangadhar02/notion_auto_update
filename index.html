@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Image</title>
+</head>
+<body>
+  <script>
+    const images = [];
+    for (let i = 1; i <= 30; i++) {
+      images.push(`https://your_username.github.io/notion_auto_update/quote_image_${i}.png`);
+    }
+    
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    document.write('<img src="' + randomImage + '" style="max-width:100%;height:auto;"/>');
+  </script>
+</body>
+</html>
