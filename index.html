@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Random Image</title>
-</head>
-<body>
+  <title>Random Image Redirect</title>
   <script>
     const images = [];
     for (let i = 1; i <= 30; i++) {
@@ -13,7 +11,9 @@
     }
     
     const randomImage = images[Math.floor(Math.random() * images.length)];
-    document.write('<img src="' + randomImage + '" style="max-width:100%;height:auto;"/>');
+    window.location.href = randomImage;
   </script>
+</head>
+<body>
 </body>
 </html>
